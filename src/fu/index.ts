@@ -17,6 +17,8 @@ import { 入山符五 } from './rushan-5.js';
 import { 佩帶符一 } from './peidai-1.js';
 import { 佩帶符二 } from './peidai-2.js';
 import { 佩帶符三 } from './peidai-3.js';
+import { 敕字式 } from './chiling-chi.js';
+import { 煞字式 } from './chiling-sha.js';
 import { 複文天天 } from './fuwen-tiantian.js';
 import { 複文見見 } from './fuwen-jianjian.js';
 import { 複文四己 } from './fuwen-siji.js';
@@ -49,6 +51,8 @@ export const 落筆簿: Record<string, 符筆> = {
   'peidai-1': 佩帶符一,
   'peidai-2': 佩帶符二,
   'peidai-3': 佩帶符三,
+  'chiling-chi': 敕字式,
+  'chiling-sha': 煞字式,
   'fuwen-tiantian': 複文天天,
   'fuwen-jianjian': 複文見見,
   'fuwen-siji': 複文四己,
