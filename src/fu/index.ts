@@ -84,6 +84,17 @@ import { 鎮宅犬雞 } from './zhenzhai-quanji.js';
 import { 鎮宅金銀 } from './zhenzhai-jinyin.js';
 import { 鎮宅蛇蟲 } from './zhenzhai-shechong.js';
 import { 鎮宅保宅 } from './zhenzhai-baozhai.js';
+import { 鎮宅神祠 } from './zhenzhai-shenci.js';
+import { 鎮宅熒星 } from './zhenzhai-yingxing.js';
+import { 鎮宅發狂 } from './zhenzhai-fakuang.js';
+import { 鎮宅官刑 } from './zhenzhai-guanxing.js';
+import { 鎮宅老樹 } from './zhenzhai-laoshu.js';
+import { 鎮宅鬼恠 } from './zhenzhai-guiguai.js';
+import { 鎮宅驚恐 } from './zhenzhai-jingkong.js';
+import { 鎮宅淫祠 } from './zhenzhai-yinci.js';
+import { 鎮宅三光 } from './zhenzhai-sanguangfu.js';
+import { 鎮宅蛀煞 } from './zhenzhai-zhusha.js';
+import { 鎮宅太歲 } from './zhenzhai-taisui.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -181,6 +192,17 @@ export const 落筆簿: Record<string, 符筆> = {
   'zhenzhai-jinyin': 鎮宅金銀,
   'zhenzhai-shechong': 鎮宅蛇蟲,
   'zhenzhai-baozhai': 鎮宅保宅,
+  'zhenzhai-shenci': 鎮宅神祠,
+  'zhenzhai-yingxing': 鎮宅熒星,
+  'zhenzhai-fakuang': 鎮宅發狂,
+  'zhenzhai-guanxing': 鎮宅官刑,
+  'zhenzhai-laoshu': 鎮宅老樹,
+  'zhenzhai-guiguai': 鎮宅鬼恠,
+  'zhenzhai-jingkong': 鎮宅驚恐,
+  'zhenzhai-yinci': 鎮宅淫祠,
+  'zhenzhai-sanguangfu': 鎮宅三光,
+  'zhenzhai-zhusha': 鎮宅蛀煞,
+  'zhenzhai-taisui': 鎮宅太歲,
   'leifa-zhaolei': 召雷飛符,
   'leifa-zhaolei-2': 召雷飛符二,
   'leifa-zhaolei-3': 召雷飛符三,
