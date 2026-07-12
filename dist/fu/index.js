@@ -120,6 +120,8 @@ import { 呼風玉符 } from './xiandu-hufeng.js';
 import { 名雷玉符 } from './xiandu-minglei.js';
 import { 起雲玉符 } from './xiandu-qiyun.js';
 import { 致雨玉符 } from './xiandu-zhiyu.js';
+import { 興電玉符 } from './xiandu-xingdian.js';
+import { 禱雪玉符 } from './xiandu-daoxue.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -258,6 +260,8 @@ export const 落筆簿 = {
     'xiandu-minglei': 名雷玉符,
     'xiandu-qiyun': 起雲玉符,
     'xiandu-zhiyu': 致雨玉符,
+    'xiandu-xingdian': 興電玉符,
+    'xiandu-daoxue': 禱雪玉符,
     'leifa-zhaolei': 召雷飛符,
     'leifa-zhaolei-2': 召雷飛符二,
     'leifa-zhaolei-3': 召雷飛符三,
