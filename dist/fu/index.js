@@ -58,6 +58,16 @@ import { 鎮宅盜賊 } from './zhenzhai-daozei.js';
 import { 鎮宅水潦 } from './zhenzhai-shuilao.js';
 import { 鎮宅雞夜 } from './zhenzhai-jiye.js';
 import { 鎮宅不宜 } from './zhenzhai-buyi.js';
+import { 鎮宅時氣 } from './zhenzhai-shiqi.js';
+import { 鎮宅橫損 } from './zhenzhai-hengsun.js';
+import { 鎮宅亡失 } from './zhenzhai-wangshi.js';
+import { 鎮宅惡鬼 } from './zhenzhai-egui.js';
+import { 鎮宅養蠶 } from './zhenzhai-yangcan.js';
+import { 鎮宅牲畜 } from './zhenzhai-shengchu.js';
+import { 鎮宅飛尸 } from './zhenzhai-feishi.js';
+import { 鎮宅惡夢 } from './zhenzhai-emeng.js';
+import { 鎮宅比符 } from './zhenzhai-bifu.js';
+import { 鎮宅宜官 } from './zhenzhai-yiguan.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -134,6 +144,16 @@ export const 落筆簿 = {
     'zhenzhai-shuilao': 鎮宅水潦,
     'zhenzhai-jiye': 鎮宅雞夜,
     'zhenzhai-buyi': 鎮宅不宜,
+    'zhenzhai-shiqi': 鎮宅時氣,
+    'zhenzhai-hengsun': 鎮宅橫損,
+    'zhenzhai-wangshi': 鎮宅亡失,
+    'zhenzhai-egui': 鎮宅惡鬼,
+    'zhenzhai-yangcan': 鎮宅養蠶,
+    'zhenzhai-shengchu': 鎮宅牲畜,
+    'zhenzhai-feishi': 鎮宅飛尸,
+    'zhenzhai-emeng': 鎮宅惡夢,
+    'zhenzhai-bifu': 鎮宅比符,
+    'zhenzhai-yiguan': 鎮宅宜官,
     'leifa-zhaolei': 召雷飛符,
     'leifa-zhaolei-2': 召雷飛符二,
     'leifa-zhaolei-3': 召雷飛符三,
