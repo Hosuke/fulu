@@ -55,6 +55,15 @@ import { 鎮宅南方 } from './zhenzhai-nan.js';
 import { 鎮宅西方 } from './zhenzhai-xi.js';
 import { 鎮宅北方 } from './zhenzhai-bei.js';
 import { 鎮宅中央 } from './zhenzhai-zhong.js';
+import { 鎮宅凶殃 } from './zhenzhai-xiongyang.js';
+import { 鎮宅鎮凶 } from './zhenzhai-zhenxiong.js';
+import { 鎮宅牛馬 } from './zhenzhai-niuma.js';
+import { 鎮宅招金 } from './zhenzhai-zhaojin.js';
+import { 鎮宅風火 } from './zhenzhai-fenghuo.js';
+import { 鎮宅盜賊 } from './zhenzhai-daozei.js';
+import { 鎮宅水潦 } from './zhenzhai-shuilao.js';
+import { 鎮宅雞夜 } from './zhenzhai-jiye.js';
+import { 鎮宅不宜 } from './zhenzhai-buyi.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -123,6 +132,15 @@ export const 落筆簿: Record<string, 符筆> = {
   'zhenzhai-xi': 鎮宅西方,
   'zhenzhai-bei': 鎮宅北方,
   'zhenzhai-zhong': 鎮宅中央,
+  'zhenzhai-xiongyang': 鎮宅凶殃,
+  'zhenzhai-zhenxiong': 鎮宅鎮凶,
+  'zhenzhai-niuma': 鎮宅牛馬,
+  'zhenzhai-zhaojin': 鎮宅招金,
+  'zhenzhai-fenghuo': 鎮宅風火,
+  'zhenzhai-daozei': 鎮宅盜賊,
+  'zhenzhai-shuilao': 鎮宅水潦,
+  'zhenzhai-jiye': 鎮宅雞夜,
+  'zhenzhai-buyi': 鎮宅不宜,
   'leifa-zhaolei': 召雷飛符,
   'leifa-zhaolei-2': 召雷飛符二,
   'leifa-zhaolei-3': 召雷飛符三,
