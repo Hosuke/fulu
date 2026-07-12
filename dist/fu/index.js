@@ -16,6 +16,10 @@ import { 複文毛目 } from './fuwen-maomu.js';
 import { 鎮宅口舌 } from './zhenzhai-koushe.js';
 import { 鎮宅禍害 } from './zhenzhai-huohai.js';
 import { 鎮宅刀兵 } from './zhenzhai-daobing.js';
+import { 召雷飛符 } from './leifa-zhaolei.js';
+import { 雷霆聞命符 } from './leifa-wenming.js';
+import { 清微令符 } from './leifa-qingwei.js';
+import { 衝命玉符 } from './leifa-chongming.js';
 export const 落筆簿 = {
     'wuyue-tai': 泰嶽真形,
     'wuyue-hua': 華嶽真形,
@@ -35,4 +39,8 @@ export const 落筆簿 = {
     'zhenzhai-koushe': 鎮宅口舌,
     'zhenzhai-huohai': 鎮宅禍害,
     'zhenzhai-daobing': 鎮宅刀兵,
+    'leifa-zhaolei': 召雷飛符,
+    'leifa-wenming': 雷霆聞命符,
+    'leifa-qingwei': 清微令符,
+    'leifa-chongming': 衝命玉符,
 };
