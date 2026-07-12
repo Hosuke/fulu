@@ -13,6 +13,11 @@ import { 入山符乙二 } from './rushan-yi-2.js';
 import { 陳安世符一 } from './chenanshi-1.js';
 import { 陳安世符二 } from './chenanshi-2.js';
 import { 老君神印 } from './laojun-shenyin.js';
+import { 入山符丙一 } from './rushan-bing-1.js';
+import { 入山符丙二 } from './rushan-bing-2.js';
+import { 入山符丙三 } from './rushan-bing-3.js';
+import { 入山符丙四 } from './rushan-bing-4.js';
+import { 入山符丙五 } from './rushan-bing-5.js';
 import { 佩帶符一 } from './peidai-1.js';
 import { 佩帶符二 } from './peidai-2.js';
 import { 佩帶符三 } from './peidai-3.js';
@@ -63,6 +68,11 @@ export const 落筆簿 = {
     'chenanshi-1': 陳安世符一,
     'chenanshi-2': 陳安世符二,
     'laojun-shenyin': 老君神印,
+    'rushan-bing-1': 入山符丙一,
+    'rushan-bing-2': 入山符丙二,
+    'rushan-bing-3': 入山符丙三,
+    'rushan-bing-4': 入山符丙四,
+    'rushan-bing-5': 入山符丙五,
     'peidai-1': 佩帶符一,
     'peidai-2': 佩帶符二,
     'peidai-3': 佩帶符三,
