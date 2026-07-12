@@ -19,6 +19,9 @@ import { 複文見見 } from './fuwen-jianjian.js';
 import { 複文四己 } from './fuwen-siji.js';
 import { 複文天天因 } from './fuwen-tianyin.js';
 import { 複文毛目 } from './fuwen-maomu.js';
+import { 鎮宅口舌 } from './zhenzhai-koushe.js';
+import { 鎮宅禍害 } from './zhenzhai-huohai.js';
+import { 鎮宅刀兵 } from './zhenzhai-daobing.js';
 
 export const 落筆簿: Record<string, 符筆> = {
   'wuyue-tai': 泰嶽真形,
@@ -36,4 +39,7 @@ export const 落筆簿: Record<string, 符筆> = {
   'fuwen-siji': 複文四己,
   'fuwen-tianyin': 複文天天因,
   'fuwen-maomu': 複文毛目,
+  'zhenzhai-koushe': 鎮宅口舌,
+  'zhenzhai-huohai': 鎮宅禍害,
+  'zhenzhai-daobing': 鎮宅刀兵,
 };
