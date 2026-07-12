@@ -14,6 +14,9 @@ import { 入山符二 } from './rushan-2.js';
 import { 入山符三 } from './rushan-3.js';
 import { 入山符四 } from './rushan-4.js';
 import { 入山符五 } from './rushan-5.js';
+import { 佩帶符一 } from './peidai-1.js';
+import { 佩帶符二 } from './peidai-2.js';
+import { 佩帶符三 } from './peidai-3.js';
 import { 複文天天 } from './fuwen-tiantian.js';
 import { 複文見見 } from './fuwen-jianjian.js';
 import { 複文四己 } from './fuwen-siji.js';
@@ -43,6 +46,9 @@ export const 落筆簿: Record<string, 符筆> = {
   'rushan-3': 入山符三,
   'rushan-4': 入山符四,
   'rushan-5': 入山符五,
+  'peidai-1': 佩帶符一,
+  'peidai-2': 佩帶符二,
+  'peidai-3': 佩帶符三,
   'fuwen-tiantian': 複文天天,
   'fuwen-jianjian': 複文見見,
   'fuwen-siji': 複文四己,
