@@ -1,0 +1,19 @@
+{
+  "name": "fulu",
+  "version": "0.1.0",
+  "description": "符籙 · 道家符籙之標準庫（符式・出典・白描）——研究陳列，非行持之符",
+  "type": "module",
+  "license": "CC-BY-NC-SA-4.0",
+  "private": true,
+  "scripts": {
+    "build": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\" && tsc",
+    "check": "tsc --noEmit"
+  },
+  "exports": {
+    "./fuge": { "types": "./dist/fuge.d.ts", "default": "./dist/fuge.js" },
+    "./fupu": { "types": "./dist/fupu.d.ts", "default": "./dist/fupu.js" },
+    "./bi":   { "types": "./dist/bi.d.ts",   "default": "./dist/bi.js" },
+    "./fu":   { "types": "./dist/fu/index.d.ts", "default": "./dist/fu/index.js" }
+  },
+  "devDependencies": { "typescript": "^5.5.0" }
+}

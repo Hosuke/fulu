@@ -1,0 +1,4 @@
+node_modules/
+參攷-local/
+.DS_Store
+*.log
