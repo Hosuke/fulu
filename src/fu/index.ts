@@ -124,6 +124,8 @@ import { 元始保神符 } from './leifa-baoshen.js';
 import { 元始符命 } from './leifa-yuanshifuming.js';
 import { 呼風玉符 } from './xiandu-hufeng.js';
 import { 名雷玉符 } from './xiandu-minglei.js';
+import { 起雲玉符 } from './xiandu-qiyun.js';
+import { 致雨玉符 } from './xiandu-zhiyu.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -261,6 +263,8 @@ export const 落筆簿: Record<string, 符筆> = {
   'leifa-yuanshifuming': 元始符命,
   'xiandu-hufeng': 呼風玉符,
   'xiandu-minglei': 名雷玉符,
+  'xiandu-qiyun': 起雲玉符,
+  'xiandu-zhiyu': 致雨玉符,
   'leifa-zhaolei': 召雷飛符,
   'leifa-zhaolei-2': 召雷飛符二,
   'leifa-zhaolei-3': 召雷飛符三,
