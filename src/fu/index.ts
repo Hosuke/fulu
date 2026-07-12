@@ -51,6 +51,8 @@ import { 鎮宅西方 } from './zhenzhai-xi.js';
 import { 鎮宅北方 } from './zhenzhai-bei.js';
 import { 鎮宅中央 } from './zhenzhai-zhong.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
+import { 召雷飛符二 } from './leifa-zhaolei-2.js';
+import { 召雷飛符三 } from './leifa-zhaolei-3.js';
 import { 雷神聚形 } from './leifa-juxing.js';
 import { 雷神散形 } from './leifa-sanxing.js';
 import { 紫微令首 } from './ziwei-lingshou.js';
@@ -107,6 +109,8 @@ export const 落筆簿: Record<string, 符筆> = {
   'zhenzhai-bei': 鎮宅北方,
   'zhenzhai-zhong': 鎮宅中央,
   'leifa-zhaolei': 召雷飛符,
+  'leifa-zhaolei-2': 召雷飛符二,
+  'leifa-zhaolei-3': 召雷飛符三,
   'leifa-juxing': 雷神聚形,
   'leifa-sanxing': 雷神散形,
   'ziwei-lingshou': 紫微令首,
