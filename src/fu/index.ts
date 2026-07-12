@@ -22,6 +22,11 @@ import { 複文毛目 } from './fuwen-maomu.js';
 import { 鎮宅口舌 } from './zhenzhai-koushe.js';
 import { 鎮宅禍害 } from './zhenzhai-huohai.js';
 import { 鎮宅刀兵 } from './zhenzhai-daobing.js';
+import { 鎮宅東方 } from './zhenzhai-dong.js';
+import { 鎮宅南方 } from './zhenzhai-nan.js';
+import { 鎮宅西方 } from './zhenzhai-xi.js';
+import { 鎮宅北方 } from './zhenzhai-bei.js';
+import { 鎮宅中央 } from './zhenzhai-zhong.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 雷霆聞命符 } from './leifa-wenming.js';
 import { 清微令符 } from './leifa-qingwei.js';
@@ -46,6 +51,11 @@ export const 落筆簿: Record<string, 符筆> = {
   'zhenzhai-koushe': 鎮宅口舌,
   'zhenzhai-huohai': 鎮宅禍害,
   'zhenzhai-daobing': 鎮宅刀兵,
+  'zhenzhai-dong': 鎮宅東方,
+  'zhenzhai-nan': 鎮宅南方,
+  'zhenzhai-xi': 鎮宅西方,
+  'zhenzhai-bei': 鎮宅北方,
+  'zhenzhai-zhong': 鎮宅中央,
   'leifa-zhaolei': 召雷飛符,
   'leifa-wenming': 雷霆聞命符,
   'leifa-qingwei': 清微令符,
