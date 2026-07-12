@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>符籙 · Fulu — 道家符籙標準庫（研究陳列）</title>
+<style>
+  /* ── 道藏夜閣 · 色律 ─────────────────────────────────────────────── */
+  :root {
+    --墨底: #0d0e11;
+    --墨面: #131418;
+    --紙陰: #191a1f;
+    --骨白: #e8e1cf;
+    --淡墨: #8f8a7b;
+    --暗墨: #55524a;
+    --硃: #c23b22;
+    --硃明: #d94f33;
+    --硃暗: #6e2418;
+    --金: #9a7b3f;
+    --欄: rgba(232, 225, 207, 0.045);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { background: var(--墨底); }
+  body {
+    color: var(--骨白);
+    font-family: "Songti TC", "STSong", "Noto Serif TC", "Source Han Serif TC", serif;
+    line-height: 1.75;
+    min-height: 100vh;
+    /* 烏絲欄：豎欄極淡，如經紙之紋 */
+    background:
+      repeating-linear-gradient(90deg, transparent 0 46px, var(--欄) 46px 47px),
+      radial-gradient(1200px 500px at 70% -10%, rgba(154,123,63,0.06), transparent 65%),
+      var(--墨底);
+  }
+  ::selection { background: var(--硃暗); color: var(--骨白); }
+
+  /* ── 題簽（豎書之首）───────────────────────────────────────────── */
+  header {
+    display: flex; align-items: stretch; gap: 3rem;
+    max-width: 1180px; margin: 0 auto; padding: 4.5rem 2rem 3rem;
+    position: relative;
+  }
+  .題簽 {
+    writing-mode: vertical-rl;
+    border: 1px solid var(--金);
+    outline: 1px solid rgba(154,123,63,0.25);
+    outline-offset: 4px;
+    padding: 1.6rem 0.9rem;
+    background: linear-gradient(180deg, rgba(154,123,63,0.10), rgba(154,123,63,0.02));
+    flex: none;
+  }
+  .題簽 h1 {
+    font-family: "Kaiti TC", "STKaiti", "BiauKai", "Noto Serif TC", serif;
+    font-size: 3.2rem; font-weight: 400; letter-spacing: 0.35em;
+    color: var(--骨白);
+  }
+  .題簽 .英 {
+    font-size: 0.68rem; letter-spacing: 0.5em; color: var(--淡墨);
+    margin-right: 0.8rem; text-transform: uppercase;
+  }
+  .首語 { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 1.1rem; padding-bottom: 0.4rem; }
+  .首語 .綱 {
+    font-family: "Kaiti TC", "STKaiti", serif;
+    font-size: 1.35rem; color: var(--骨白); letter-spacing: 0.12em;
+  }
+  .首語 .述 { color: var(--淡墨); font-size: 0.92rem; max-width: 34em; }
+  .首語 .述 b { color: var(--骨白); font-weight: 400; }
+
+  /* 朱印：研究陳列，非行持之符 */
+  .朱印 {
+    position: absolute; right: 2.2rem; top: 4.2rem;
+    writing-mode: vertical-rl;
+    font-family: "Kaiti TC", "STKaiti", serif;
+    font-size: 0.95rem; letter-spacing: 0.28em; line-height: 1.5;
+    color: var(--硃明);
+    border: 2px solid var(--硃);
+    padding: 0.9rem 0.55rem;
+    transform: rotate(2.5deg);
+    background: rgba(194,59,34,0.07);
+    box-shadow: 0 0 0 1px rgba(194,59,34,0.18) inset;
+    user-select: none;
+  }
+
+  /* ── 凡例與機關 ─────────────────────────────────────────────────── */
+  .凡例列 {
+    max-width: 1180px; margin: 0 auto; padding: 0 2rem 1.2rem;
+    display: flex; align-items: center; gap: 1.8rem; flex-wrap: wrap;
+    border-bottom: 1px solid rgba(232,225,207,0.08);
+  }
+  .凡例 { color: var(--淡墨); font-size: 0.8rem; letter-spacing: 0.06em; }
+  .凡例 .朱樣 {
+    display: inline-block; width: 0.82em; height: 0.82em;
+    border: 1.5px solid var(--硃); margin-right: 0.45em; vertical-align: -0.06em;
+  }
+  .凡例 .金樣 {
+    display: inline-block; width: 0.82em; height: 0.82em;
+    border: 1px solid var(--金); margin-right: 0.45em; vertical-align: -0.06em;
+  }
+  .機關 { margin-left: auto; display: flex; gap: 0.6rem; }
+  .機關 button {
+    font-family: inherit; font-size: 0.82rem; letter-spacing: 0.15em;
+    color: var(--淡墨); background: transparent;
+    border: 1px solid rgba(232,225,207,0.18); border-radius: 0;
+    padding: 0.28rem 0.9rem; cursor: pointer;
+    transition: color 0.25s, border-color 0.25s, background 0.25s;
+  }
+  .機關 button:hover { color: var(--骨白); border-color: var(--淡墨); }
+  .機關 button[aria-pressed="true"] {
+    color: var(--硃明); border-color: var(--硃); background: rgba(194,59,34,0.08);
+  }
+
+  /* ── 壇與符牌 ───────────────────────────────────────────────────── */
+  main { max-width: 1180px; margin: 0 auto; padding: 1.5rem 2rem 4rem; }
+  .類題 {
+    display: flex; align-items: baseline; gap: 1rem;
+    margin: 3rem 0 1.6rem;
+  }
+  .類題::before { content: ""; width: 0.55rem; height: 0.55rem; background: var(--硃); flex: none; align-self: center; }
+  .類題 h2 {
+    font-family: "Kaiti TC", "STKaiti", serif;
+    font-size: 1.5rem; font-weight: 400; letter-spacing: 0.2em;
+  }
+  .類題 .計 { color: var(--暗墨); font-size: 0.85rem; }
+  .類題::after { content: ""; flex: 1; border-top: 1px solid rgba(232,225,207,0.08); align-self: center; }
+
+  .符列 { display: flex; flex-wrap: wrap; gap: 2rem 1.6rem; align-items: flex-start; }
+
+  .符牌 {
+    background: linear-gradient(180deg, var(--墨面), var(--紙陰));
+    border: 1px solid rgba(232,225,207,0.10);
+    padding: 1.1rem 1.1rem 1rem;
+    width: 236px;
+    opacity: 0; transform: translateY(14px);
+    animation: 顯 0.7s cubic-bezier(0.22,0.8,0.3,1) forwards;
+  }
+  .符牌.寬幅 { width: 348px; }
+  @keyframes 顯 { to { opacity: 1; transform: none; } }
+
+  /* 朱界候審：信＝待核者，朱框雙界，不上正壇 */
+  .符牌.候審 {
+    border: 1.5px solid var(--硃暗);
+    outline: 1px solid rgba(194,59,34,0.28);
+    outline-offset: 3px;
+    position: relative;
+  }
+  .符牌.候審::after {
+    content: "候審";
+    position: absolute; top: 0.55rem; right: 0.55rem;
+    font-family: "Kaiti TC", "STKaiti", serif;
+    font-size: 0.72rem; letter-spacing: 0.2em;
+    color: var(--硃明); border: 1px solid var(--硃暗);
+    padding: 0.1rem 0.34rem 0.1rem 0.5rem;
+    background: rgba(194,59,34,0.10);
+  }
+  .符牌 .畫 {
+    display: flex; justify-content: center; padding: 0.4rem 0 0.8rem;
+  }
+  .符牌 canvas { display: block; }
+  .符牌 h3 {
+    font-family: "Kaiti TC", "STKaiti", serif;
+    font-size: 1.12rem; font-weight: 400; letter-spacing: 0.14em;
+    margin-bottom: 0.15rem;
+  }
+  .符牌 .類簽 { color: var(--金); font-size: 0.72rem; letter-spacing: 0.3em; }
+  .符牌 .式述 { color: var(--淡墨); font-size: 0.8rem; margin-top: 0.5rem; }
+  .符牌 .出典欄 {
+    margin-top: 0.65rem; padding-top: 0.55rem;
+    border-top: 1px dashed rgba(232,225,207,0.12);
+    color: var(--暗墨); font-size: 0.72rem; line-height: 1.65;
+  }
+  .符牌 .出典欄 .典 { color: var(--淡墨); }
+  .符牌 .據圖註 { color: var(--暗墨); font-size: 0.68rem; margin-top: 0.4rem; font-style: italic; }
+
+  /* 候筆（有譜無筆）之空位 */
+  .符牌 .候筆 {
+    display: flex; align-items: center; justify-content: center;
+    color: var(--暗墨); font-family: "Kaiti TC", "STKaiti", serif;
+    letter-spacing: 0.4em; font-size: 0.9rem;
+    border: 1px dashed rgba(232,225,207,0.14);
+    writing-mode: vertical-rl;
+  }
+
+  /* ── 空卷與誦戒破之示 ──────────────────────────────────────────── */
+  .空卷 {
+    margin: 5rem auto; text-align: center; color: var(--淡墨);
+    font-family: "Kaiti TC", "STKaiti", serif; letter-spacing: 0.2em;
+  }
+  .空卷 .大 { font-size: 1.6rem; color: var(--骨白); margin-bottom: 0.8rem; }
+  .破戒 {
+    max-width: 1180px; margin: 2rem auto; padding: 1rem 2rem;
+    border: 1.5px solid var(--硃); color: var(--硃明);
+    font-size: 0.9rem; background: rgba(194,59,34,0.06);
+  }
+
+  footer {
+    max-width: 1180px; margin: 0 auto; padding: 2.5rem 2rem 3.5rem;
+    border-top: 1px solid rgba(232,225,207,0.08);
+    color: var(--暗墨); font-size: 0.78rem; letter-spacing: 0.05em;
+    display: flex; gap: 2.5rem; flex-wrap: wrap;
+  }
+  footer .敬 { color: var(--淡墨); max-width: 40em; }
+
+  @media (max-width: 720px) {
+    header { flex-direction: column; gap: 1.6rem; padding-top: 3rem; }
+    .題簽 { align-self: flex-start; }
+    .題簽 h1 { font-size: 2.3rem; }
+    .朱印 { top: 3rem; right: 1.2rem; font-size: 0.8rem; }
+    .符牌, .符牌.寬幅 { width: 100%; max-width: 348px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="題簽">
+    <h1>符籙</h1>
+    <span class="英">FULU</span>
+  </div>
+  <div class="首語">
+    <div class="綱">道家符籙之標準庫——符式・出典・白描</div>
+    <p class="述">
+      承粉本庫之法統：<b>格網為律，出典為戒，筆觸為器</b>。凡式必道藏本・善本圖版，
+      逐字繫源；查不實者置闕待核，祕而不傳者記位不錄。深底之上，白描見骨。
+    </p>
+  </div>
+  <div class="朱印" title="本庫為圖像學與書法研究之藏；符籙之行持屬道門儀軌，不在此庫">研究陳列<br>非行持符</div>
+</header>
+
+<div class="凡例列">
+  <span class="凡例"><span class="朱樣"></span>朱界＝信待核，候主人印可，不上正壇</span>
+  <span class="凡例"><span class="金樣"></span>素界＝已核（式・出典・結構・用途四字段皆 ≥2 源）</span>
+  <div class="機關">
+    <button id="鈕硃" aria-pressed="false" title="硃層著色（密核・點竅之位）">硃</button>
+    <button id="鈕界" aria-pressed="false" title="顯紙緣與符格段界">界</button>
+  </div>
+</div>
+
+<main id="壇"></main>
+
+<footer>
+  <span>符籙 · Fulu — CC BY-NC-SA 4.0</span>
+  <span class="敬">敬而不用：本庫所錄符式，皆自公版道藏圖版考據重繪，為圖像學與書法研究之陳列。
+  符籙之「用」——開光・敕召・行持——屬道門儀軌，非本庫之事。</span>
+</footer>
+
+<script type="module">
+/* 陳列之機：載譜與簿，逐符成牌。畫於透明布（勿鋪底——蔽法之律），深底由頁面出。 */
+const 壇 = document.getElementById('壇');
+const 鈕硃 = document.getElementById('鈕硃');
+const 鈕界 = document.getElementById('鈕界');
+const 態 = { 硃: false, 界: false };
+
+function 破戒示(msg) {
+  const d = document.createElement('div');
+  d.className = '破戒';
+  d.textContent = msg;
+  document.body.insertBefore(d, 壇);
+}
+
+let 庫;
+try {
+  const [fupu, fu, fubi, fuge] = await Promise.all([
+    import('./dist/fupu.js'),
+    import('./dist/fu/index.js'),
+    import('./dist/fubi.js'),
+    import('./dist/fuge.js'),
+  ]);
+  庫 = { ...fupu, ...fu, ...fubi, ...fuge };
+} catch (e) {
+  破戒示(`載庫不得（${e.message}）——先 npm run build，或符格誦戒破，宜查數據。`);
+  throw e;
+}
+
+const { 符譜, 落筆簿, 執符筆, 符界, 紙, 段 } = 庫;
+const 類序 = ['真形圖', '入山符', '複文', '鎮宅符', '雷法符', '籙', '其他'];
+
+function 畫符(canvas, 條) {
+  const 筆fn = 落筆簿[條.id];
+  const 幅比 = 條.幅比 ?? 紙.高 / 紙.寬;
+  const 基寬 = 幅比 < 2 ? 300 : 190;
+  const 邊 = Math.round(基寬 * 0.09);
+  const 紙寬px = 基寬 - 邊 * 2;
+  const 高 = Math.round(邊 * 2 + 紙寬px * 幅比);
+  const dpr = Math.min(2.5, window.devicePixelRatio || 1);
+  canvas.style.width = 基寬 + 'px';
+  canvas.style.height = 高 + 'px';
+  canvas.width = Math.round(基寬 * dpr);
+  canvas.height = Math.round(高 * dpr);
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  ctx.strokeStyle = ctx.fillStyle = '#e8e1cf';
+  ctx.lineJoin = ctx.lineCap = 'round';
+  ctx.save();
+  const bi = 執符筆(ctx, {
+    中x: 基寬 / 2, 頂y: 邊, 寬px: 紙寬px,
+    硃色: 態.硃 ? '#d94f33' : undefined,
+  });
+  if (態.界) {
+    符界(bi, 幅比);
+    if (Math.abs(幅比 - 紙.高 / 紙.寬) < 1e-6) {
+      // 豎條之符乃示段界（符頭/身/膽/腳）——淡而斷之線
+      bi.dim(0.28, () => bi.thin(() => {
+        for (const z of [段.符頭末, 段.符身末, 段.符膽末])
+          bi.P([[-紙.寬 / 2, z], [紙.寬 / 2, z]]);
+      }));
+    }
+  }
+  筆fn(bi, 條);
+  ctx.restore();
+}
+
+function 成牌(條, 序) {
+  const 牌 = document.createElement('article');
+  const 幅比 = 條.幅比 ?? 3;
+  牌.className = '符牌' + (條.信 === '待核' ? ' 候審' : '') + (幅比 < 2 ? ' 寬幅' : '');
+  牌.style.animationDelay = (序 * 0.07) + 's';
+
+  const 畫 = document.createElement('div');
+  畫.className = '畫';
+  if (落筆簿[條.id]) {
+    const c = document.createElement('canvas');
+    畫.appendChild(c);
+    牌._畫 = () => 畫符(c, 條);
+  } else {
+    const 空 = document.createElement('div');
+    空.className = '候筆';
+    空.textContent = '譜立候筆';
+    const 基寬 = 幅比 < 2 ? 300 : 190;
+    空.style.width = 基寬 + 'px';
+    空.style.height = Math.round(基寬 * Math.max(幅比, 0.9)) + 'px';
+    畫.appendChild(空);
+  }
+  牌.appendChild(畫);
+
+  const h = document.createElement('h3');
+  h.textContent = 條.名;
+  牌.appendChild(h);
+  const 簽 = document.createElement('div');
+  簽.className = '類簽';
+  簽.textContent = 條.類 + (條.信 === '已核' ? '・已核' : '');
+  牌.appendChild(簽);
+
+  if (條.式 || 條.用) {
+    const p = document.createElement('p');
+    p.className = '式述';
+    p.textContent = [條.式, 條.用 && `用：${條.用}`].filter(Boolean).join('　');
+    牌.appendChild(p);
+  }
+  if (條.出典?.length) {
+    const 欄 = document.createElement('div');
+    欄.className = '出典欄';
+    for (const s of 條.出典) {
+      const 行 = document.createElement('div');
+      const 典 = document.createElement('span');
+      典.className = '典';
+      典.textContent = s.典 + (s.卷 ? `・${s.卷}` : '');
+      行.appendChild(典);
+      if (s.引) 行.appendChild(document.createTextNode(`：「${s.引}」`));
+      else if (s.註) 行.appendChild(document.createTextNode(`（${s.註}）`));
+      欄.appendChild(行);
+    }
+    牌.appendChild(欄);
+  }
+  if (條.據圖) {
+    const 註 = document.createElement('div');
+    註.className = '據圖註';
+    註.textContent = `據圖版：${條.據圖}`;
+    牌.appendChild(註);
+  }
+  return 牌;
+}
+
+const 諸牌 = [];
+function 陳列() {
+  壇.textContent = '';
+  諸牌.length = 0;
+  if (!符譜.length) {
+    const d = document.createElement('div');
+    d.className = '空卷';
+    d.innerHTML = '<div class="大">符譜未開卷</div><div>考據先行——docs/考據/ 立卷後，譜與筆乃至。</div>';
+    壇.appendChild(d);
+    return;
+  }
+  let 序 = 0;
+  for (const 類 of 類序) {
+    const 組 = 符譜.filter(f => f.類 === 類);
+    if (!組.length) continue;
+    const 題 = document.createElement('div');
+    題.className = '類題';
+    題.innerHTML = `<h2>${類}</h2><span class="計">凡 ${組.length} 道</span>`;
+    壇.appendChild(題);
+    const 列 = document.createElement('div');
+    列.className = '符列';
+    for (const 條 of 組) {
+      const 牌 = 成牌(條, 序++);
+      列.appendChild(牌);
+      諸牌.push(牌);
+    }
+    壇.appendChild(列);
+  }
+  重畫();
+}
+function 重畫() { for (const 牌 of 諸牌) 牌._畫?.(); }
+
+鈕硃.addEventListener('click', () => {
+  態.硃 = !態.硃;
+  鈕硃.setAttribute('aria-pressed', String(態.硃));
+  重畫();
+});
+鈕界.addEventListener('click', () => {
+  態.界 = !態.界;
+  鈕界.setAttribute('aria-pressed', String(態.界));
+  重畫();
+});
+
+陳列();
+</script>
+</body>
+</html>

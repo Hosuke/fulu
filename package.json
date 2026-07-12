@@ -13,6 +13,7 @@
     "./fuge": { "types": "./dist/fuge.d.ts", "default": "./dist/fuge.js" },
     "./fupu": { "types": "./dist/fupu.d.ts", "default": "./dist/fupu.js" },
     "./bi":   { "types": "./dist/bi.d.ts",   "default": "./dist/bi.js" },
+    "./fubi": { "types": "./dist/fubi.d.ts", "default": "./dist/fubi.js" },
     "./fu":   { "types": "./dist/fu/index.d.ts", "default": "./dist/fu/index.js" }
   },
   "devDependencies": { "typescript": "^5.5.0" }
