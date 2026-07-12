@@ -101,6 +101,19 @@ import { 鎮宅百鬼 } from './zhenzhai-baiguibu.js';
 import { 鎮宅夢寐 } from './zhenzhai-mengmei.js';
 import { 鎮宅子孫 } from './zhenzhai-zisun.js';
 import { 鎮宅產育 } from './zhenzhai-chanyu.js';
+import { 鎮宅連綿 } from './zhenzhai-lianmian.js';
+import { 鎮宅奴馬 } from './zhenzhai-numa.js';
+import { 鎮宅虛耗 } from './zhenzhai-xuhao.js';
+import { 鎮宅驚人 } from './zhenzhai-jingren.js';
+import { 鎮宅沈重 } from './zhenzhai-chenzhong.js';
+import { 鎮宅腹脹 } from './zhenzhai-fuzhang.js';
+import { 鎮宅產耗 } from './zhenzhai-chanhao.js';
+import { 鎮宅立塚 } from './zhenzhai-lizhong.js';
+import { 鎮宅不禳 } from './zhenzhai-burang.js';
+import { 璇璣八卦圖 } from './zhenzhai-xuanji.js';
+import { 鎮宅釜鳴 } from './zhenzhai-fuming.js';
+import { 鎮宅炁運 } from './zhenzhai-qiyun.js';
+import { 鎮宅猪猫 } from './zhenzhai-zhumao.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -220,6 +233,19 @@ export const 落筆簿 = {
     'zhenzhai-mengmei': 鎮宅夢寐,
     'zhenzhai-zisun': 鎮宅子孫,
     'zhenzhai-chanyu': 鎮宅產育,
+    'zhenzhai-lianmian': 鎮宅連綿,
+    'zhenzhai-numa': 鎮宅奴馬,
+    'zhenzhai-xuhao': 鎮宅虛耗,
+    'zhenzhai-jingren': 鎮宅驚人,
+    'zhenzhai-chenzhong': 鎮宅沈重,
+    'zhenzhai-fuzhang': 鎮宅腹脹,
+    'zhenzhai-chanhao': 鎮宅產耗,
+    'zhenzhai-lizhong': 鎮宅立塚,
+    'zhenzhai-burang': 鎮宅不禳,
+    'zhenzhai-xuanji': 璇璣八卦圖,
+    'zhenzhai-fuming': 鎮宅釜鳴,
+    'zhenzhai-qiyun': 鎮宅炁運,
+    'zhenzhai-zhumao': 鎮宅猪猫,
     'leifa-zhaolei': 召雷飛符,
     'leifa-zhaolei-2': 召雷飛符二,
     'leifa-zhaolei-3': 召雷飛符三,
