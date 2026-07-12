@@ -14,6 +14,11 @@ import { 入山符二 } from './rushan-2.js';
 import { 入山符三 } from './rushan-3.js';
 import { 入山符四 } from './rushan-4.js';
 import { 入山符五 } from './rushan-5.js';
+import { 入山符乙一 } from './rushan-yi-1.js';
+import { 入山符乙二 } from './rushan-yi-2.js';
+import { 陳安世符一 } from './chenanshi-1.js';
+import { 陳安世符二 } from './chenanshi-2.js';
+import { 老君神印 } from './laojun-shenyin.js';
 import { 佩帶符一 } from './peidai-1.js';
 import { 佩帶符二 } from './peidai-2.js';
 import { 佩帶符三 } from './peidai-3.js';
@@ -60,6 +65,11 @@ export const 落筆簿: Record<string, 符筆> = {
   'rushan-3': 入山符三,
   'rushan-4': 入山符四,
   'rushan-5': 入山符五,
+  'rushan-yi-1': 入山符乙一,
+  'rushan-yi-2': 入山符乙二,
+  'chenanshi-1': 陳安世符一,
+  'chenanshi-2': 陳安世符二,
+  'laojun-shenyin': 老君神印,
   'peidai-1': 佩帶符一,
   'peidai-2': 佩帶符二,
   'peidai-3': 佩帶符三,
