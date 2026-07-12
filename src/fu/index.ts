@@ -18,6 +18,14 @@ import { 佩帶符一 } from './peidai-1.js';
 import { 佩帶符二 } from './peidai-2.js';
 import { 佩帶符三 } from './peidai-3.js';
 import { 敕字式 } from './chiling-chi.js';
+import { 天字式 } from './chiling-tian.js';
+import { 剛字式 } from './chiling-gang.js';
+import { 大字式 } from './chiling-da.js';
+import { 聖字式 } from './chiling-sheng.js';
+import { 鬼字式 } from './chiling-gui.js';
+import { 天剛聚形 } from './chiling-tiangang.js';
+import { 三光聚形 } from './sanguang-ju.js';
+import { 三光散形 } from './sanguang-san.js';
 import { 煞字式 } from './chiling-sha.js';
 import { 複文天天 } from './fuwen-tiantian.js';
 import { 複文見見 } from './fuwen-jianjian.js';
@@ -57,6 +65,14 @@ export const 落筆簿: Record<string, 符筆> = {
   'peidai-3': 佩帶符三,
   'chiling-chi': 敕字式,
   'chiling-sha': 煞字式,
+  'chiling-tian': 天字式,
+  'chiling-gang': 剛字式,
+  'chiling-da': 大字式,
+  'chiling-sheng': 聖字式,
+  'chiling-gui': 鬼字式,
+  'chiling-tiangang': 天剛聚形,
+  'sanguang-ju': 三光聚形,
+  'sanguang-san': 三光散形,
   'fuwen-tiantian': 複文天天,
   'fuwen-jianjian': 複文見見,
   'fuwen-siji': 複文四己,
