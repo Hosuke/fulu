@@ -138,6 +138,12 @@ import { 祈晴符 } from './yutou-qiqing.js';
 import { 散雲符 } from './yutou-sanyun.js';
 import { 止風符 } from './yutou-zhifeng.js';
 import { 破廟符 } from './yutou-pomiao.js';
+import { 太上符二 } from './taishang-2.js';
+import { 太上符三 } from './taishang-3.js';
+import { 太上符四 } from './taishang-4.js';
+import { 太上符五 } from './taishang-5.js';
+import { 太上符六 } from './taishang-6.js';
+import { 太上符七 } from './taishang-7.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -294,6 +300,12 @@ export const 落筆簿 = {
     'yutou-sanyun': 散雲符,
     'yutou-zhifeng': 止風符,
     'yutou-pomiao': 破廟符,
+    'taishang-2': 太上符二,
+    'taishang-3': 太上符三,
+    'taishang-4': 太上符四,
+    'taishang-5': 太上符五,
+    'taishang-6': 太上符六,
+    'taishang-7': 太上符七,
     'leifa-zhaolei': 召雷飛符,
     'leifa-zhaolei-2': 召雷飛符二,
     'leifa-zhaolei-3': 召雷飛符三,
