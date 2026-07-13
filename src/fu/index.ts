@@ -150,6 +150,13 @@ import { 太上符四 } from './taishang-4.js';
 import { 太上符五 } from './taishang-5.js';
 import { 太上符六 } from './taishang-6.js';
 import { 太上符七 } from './taishang-7.js';
+import { 西方符一 } from './mulang-xi-1.js';
+import { 西方符二 } from './mulang-xi-2.js';
+import { 西方符三 } from './mulang-xi-3.js';
+import { 西方符四 } from './mulang-xi-4.js';
+import { 西方符五 } from './mulang-xi-5.js';
+import { 西方符六 } from './mulang-xi-6.js';
+import { 西方符七 } from './mulang-xi-7.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -313,6 +320,13 @@ export const 落筆簿: Record<string, 符筆> = {
   'taishang-5': 太上符五,
   'taishang-6': 太上符六,
   'taishang-7': 太上符七,
+  'mulang-xi-1': 西方符一,
+  'mulang-xi-2': 西方符二,
+  'mulang-xi-3': 西方符三,
+  'mulang-xi-4': 西方符四,
+  'mulang-xi-5': 西方符五,
+  'mulang-xi-6': 西方符六,
+  'mulang-xi-7': 西方符七,
   'leifa-zhaolei': 召雷飛符,
   'leifa-zhaolei-2': 召雷飛符二,
   'leifa-zhaolei-3': 召雷飛符三,
