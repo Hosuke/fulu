@@ -133,6 +133,11 @@ import { 起雲符 } from './yutou-qiyun.js';
 import { 起雷符 } from './yutou-qilei.js';
 import { 祈雨符 } from './yutou-qiyu.js';
 import { 役電符 } from './yutou-yidian.js';
+import { 祈雲符 } from './yutou-qiyun2.js';
+import { 祈晴符 } from './yutou-qiqing.js';
+import { 散雲符 } from './yutou-sanyun.js';
+import { 止風符 } from './yutou-zhifeng.js';
+import { 破廟符 } from './yutou-pomiao.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -284,6 +289,11 @@ export const 落筆簿 = {
     'yutou-qilei': 起雷符,
     'yutou-qiyu': 祈雨符,
     'yutou-yidian': 役電符,
+    'yutou-qiyun2': 祈雲符,
+    'yutou-qiqing': 祈晴符,
+    'yutou-sanyun': 散雲符,
+    'yutou-zhifeng': 止風符,
+    'yutou-pomiao': 破廟符,
     'leifa-zhaolei': 召雷飛符,
     'leifa-zhaolei-2': 召雷飛符二,
     'leifa-zhaolei-3': 召雷飛符三,
