@@ -177,6 +177,8 @@ import { 伐南符二 } from './mulang-fas-2.js';
 import { 伐南符三 } from './mulang-fas-3.js';
 import { 伐南符四 } from './mulang-fas-4.js';
 import { 伐南符五 } from './mulang-fas-5.js';
+import { 伐南符六 } from './mulang-fas-6.js';
+import { 伐南符七 } from './mulang-fas-7.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -372,6 +374,8 @@ export const 落筆簿 = {
     'mulang-fas-3': 伐南符三,
     'mulang-fas-4': 伐南符四,
     'mulang-fas-5': 伐南符五,
+    'mulang-fas-6': 伐南符六,
+    'mulang-fas-7': 伐南符七,
     'leifa-zhaolei': 召雷飛符,
     'leifa-zhaolei-2': 召雷飛符二,
     'leifa-zhaolei-3': 召雷飛符三,
