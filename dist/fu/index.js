@@ -172,6 +172,9 @@ import { 伐惡符四 } from './mulang-fae-4.js';
 import { 伐惡符五 } from './mulang-fae-5.js';
 import { 伐惡符六 } from './mulang-fae-6.js';
 import { 伐惡符七 } from './mulang-fae-7.js';
+import { 伐南符一 } from './mulang-fas-1.js';
+import { 伐南符二 } from './mulang-fas-2.js';
+import { 伐南符三 } from './mulang-fas-3.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -362,6 +365,9 @@ export const 落筆簿 = {
     'mulang-fae-5': 伐惡符五,
     'mulang-fae-6': 伐惡符六,
     'mulang-fae-7': 伐惡符七,
+    'mulang-fas-1': 伐南符一,
+    'mulang-fas-2': 伐南符二,
+    'mulang-fas-3': 伐南符三,
     'leifa-zhaolei': 召雷飛符,
     'leifa-zhaolei-2': 召雷飛符二,
     'leifa-zhaolei-3': 召雷飛符三,
