@@ -181,6 +181,8 @@ import { 伐惡符七 } from './mulang-fae-7.js';
 import { 伐南符一 } from './mulang-fas-1.js';
 import { 伐南符二 } from './mulang-fas-2.js';
 import { 伐南符三 } from './mulang-fas-3.js';
+import { 伐南符四 } from './mulang-fas-4.js';
+import { 伐南符五 } from './mulang-fas-5.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -375,6 +377,8 @@ export const 落筆簿: Record<string, 符筆> = {
   'mulang-fas-1': 伐南符一,
   'mulang-fas-2': 伐南符二,
   'mulang-fas-3': 伐南符三,
+  'mulang-fas-4': 伐南符四,
+  'mulang-fas-5': 伐南符五,
   'leifa-zhaolei': 召雷飛符,
   'leifa-zhaolei-2': 召雷飛符二,
   'leifa-zhaolei-3': 召雷飛符三,
