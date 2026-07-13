@@ -134,6 +134,11 @@ import { 請晴玉符 } from './xiandu-qingqing.js';
 import { 三台神符一 } from './santai-1.js';
 import { 三台神符二 } from './santai-2.js';
 import { 三台神符三 } from './santai-3.js';
+import { 起風符 } from './yutou-qifeng.js';
+import { 起雲符 } from './yutou-qiyun.js';
+import { 起雷符 } from './yutou-qilei.js';
+import { 祈雨符 } from './yutou-qiyu.js';
+import { 役電符 } from './yutou-yidian.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -281,6 +286,11 @@ export const 落筆簿: Record<string, 符筆> = {
   'santai-1': 三台神符一,
   'santai-2': 三台神符二,
   'santai-3': 三台神符三,
+  'yutou-qifeng': 起風符,
+  'yutou-qiyun': 起雲符,
+  'yutou-qilei': 起雷符,
+  'yutou-qiyu': 祈雨符,
+  'yutou-yidian': 役電符,
   'leifa-zhaolei': 召雷飛符,
   'leifa-zhaolei-2': 召雷飛符二,
   'leifa-zhaolei-3': 召雷飛符三,
