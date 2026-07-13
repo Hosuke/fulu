@@ -171,6 +171,13 @@ import { 北方符四 } from './mulang-bei-4.js';
 import { 北方符五 } from './mulang-bei-5.js';
 import { 北方符六 } from './mulang-bei-6.js';
 import { 北方符七 } from './mulang-bei-7.js';
+import { 伐惡符一 } from './mulang-fae-1.js';
+import { 伐惡符二 } from './mulang-fae-2.js';
+import { 伐惡符三 } from './mulang-fae-3.js';
+import { 伐惡符四 } from './mulang-fae-4.js';
+import { 伐惡符五 } from './mulang-fae-5.js';
+import { 伐惡符六 } from './mulang-fae-6.js';
+import { 伐惡符七 } from './mulang-fae-7.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -355,6 +362,13 @@ export const 落筆簿: Record<string, 符筆> = {
   'mulang-bei-5': 北方符五,
   'mulang-bei-6': 北方符六,
   'mulang-bei-7': 北方符七,
+  'mulang-fae-1': 伐惡符一,
+  'mulang-fae-2': 伐惡符二,
+  'mulang-fae-3': 伐惡符三,
+  'mulang-fae-4': 伐惡符四,
+  'mulang-fae-5': 伐惡符五,
+  'mulang-fae-6': 伐惡符六,
+  'mulang-fae-7': 伐惡符七,
   'leifa-zhaolei': 召雷飛符,
   'leifa-zhaolei-2': 召雷飛符二,
   'leifa-zhaolei-3': 召雷飛符三,
