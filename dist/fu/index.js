@@ -151,6 +151,13 @@ import { 西方符四 } from './mulang-xi-4.js';
 import { 西方符五 } from './mulang-xi-5.js';
 import { 西方符六 } from './mulang-xi-6.js';
 import { 西方符七 } from './mulang-xi-7.js';
+import { 南方符一 } from './mulang-nan-1.js';
+import { 南方符二 } from './mulang-nan-2.js';
+import { 南方符三 } from './mulang-nan-3.js';
+import { 南方符四 } from './mulang-nan-4.js';
+import { 南方符五 } from './mulang-nan-5.js';
+import { 南方符六 } from './mulang-nan-6.js';
+import { 南方符七 } from './mulang-nan-7.js';
 import { 召雷飛符 } from './leifa-zhaolei.js';
 import { 召雷飛符二 } from './leifa-zhaolei-2.js';
 import { 召雷飛符三 } from './leifa-zhaolei-3.js';
@@ -320,6 +327,13 @@ export const 落筆簿 = {
     'mulang-xi-5': 西方符五,
     'mulang-xi-6': 西方符六,
     'mulang-xi-7': 西方符七,
+    'mulang-nan-1': 南方符一,
+    'mulang-nan-2': 南方符二,
+    'mulang-nan-3': 南方符三,
+    'mulang-nan-4': 南方符四,
+    'mulang-nan-5': 南方符五,
+    'mulang-nan-6': 南方符六,
+    'mulang-nan-7': 南方符七,
     'leifa-zhaolei': 召雷飛符,
     'leifa-zhaolei-2': 召雷飛符二,
     'leifa-zhaolei-3': 召雷飛符三,
